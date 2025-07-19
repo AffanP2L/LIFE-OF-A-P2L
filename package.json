@@ -1,0 +1,33 @@
+{
+  "name": "life-of-a-p2l",
+  "version": "1.0.0",
+  "description": "A documentation and media repository about Affan Aziz Pritul's journey in art, philosophy, and technology",
+  "type": "module",
+  "main": "firebaseConfig.js",
+  "scripts": {
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "test": "echo \"No tests specified yet\"",
+    "validate-config": "node -r dotenv/config -e \"import('./firebaseConfig.js').then(() => console.log('Firebase config is valid')).catch(err => { console.error('Config error:', err.message); process.exit(1); })\""
+  },
+  "keywords": [
+    "documentation",
+    "firebase",
+    "art",
+    "philosophy",
+    "technology"
+  ],
+  "author": "Affan Aziz Pritul",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "firebase": "^10.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "@eslint/js": "^9.0.0"
+  }
+}
